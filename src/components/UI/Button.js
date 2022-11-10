@@ -3,9 +3,8 @@ import useTheme from "../../hooks/useTheme";
 import styles from "./Button.module.css";
 
 const Button = (props) => {
-  const { children, disabled = false } = props;
-  const { theme } = useTheme();
-
+  const { children, disabled = false, theme } = props;
+  console.log(theme);
   return (
     <button
       {...props}

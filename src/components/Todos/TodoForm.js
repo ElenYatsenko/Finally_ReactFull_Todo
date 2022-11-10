@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./TodoForm.module.css";
 import Button from "../UI/Button";
 
-const TodoForm = ({ addTodo }) => {
+const TodoForm = ({ addTodo, theme }) => {
   const [text, setText] = useState("");
   const onSubmitHandler = (event) => {
     event.preventDefault();
@@ -20,7 +20,7 @@ const TodoForm = ({ addTodo }) => {
             setText(e.target.value);
           }}
         />
-        <Button type="submit" title="Submit">
+        <Button type="submit" title="Submit" theme={theme}>
           Submit
         </Button>
       </form>

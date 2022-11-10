@@ -47,7 +47,11 @@ const Todos = () => {
   return (
     <div className={`App ${theme}`}>
       <h1>Todo App</h1>
-      <TodoForm addTodo={addTodoHandler} />
+      <div className="switch">
+        <label>{theme === "light" ? "Light Mode" : "Dark Mode"}</label>
+        <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+      </div>
+      <TodoForm addTodo={addTodoHandler} theme={theme} />
       {!!todos.length && (
         <TodosActions
           completedTodosExist={!!completedTodosCount}
@@ -66,10 +70,6 @@ const Todos = () => {
         ${completedTodosCount > 1 ? "todos" : "todo"}
         `}</h2>
       )}
-      <div className="switch">
-        <label>{theme === "light" ? "Light Mode" : "Dark Mode"}</label>
-        <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
-      </div>
     </div>
   );
 };
