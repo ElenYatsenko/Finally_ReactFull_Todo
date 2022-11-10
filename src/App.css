@@ -1,38 +1,75 @@
 .App {
+  min-width: calc(97vh - 100px);
+  min-height: calc(97vh - 90px);
   text-align: center;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: rgb(12, 177, 177);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  text-align: left;
+  background-color: #112d49;
+  padding: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav a {
+  margin: 15px;
+}
+
+.light {
+  color: black;
+  background: rgb(229, 234, 240);
+  background: linear-gradient(
+    0deg,
+    rgba(229, 234, 240, 1) 0%,
+    rgba(193, 217, 241, 1) 35%,
+    rgba(17, 45, 73, 1) 100%
+  );
+}
+
+.dark {
+  color: white;
+  background: rgb(172, 199, 226);
+  background: linear-gradient(
+    0deg,
+    rgba(172, 199, 226, 1) 0%,
+    rgba(90, 140, 190, 1) 35%,
+    rgba(17, 45, 73, 1) 100%
+  );
+}
+
+.switch {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.switch label {
+  margin: 10px;
+}
+
+.light .switch label {
+  color: black;
+}
+
+.dark .switch label {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.activeLink {
+  text-decoration: none;
+  color: rgb(15, 117, 117);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.disactiveLink {
+  text-decoration: none;
+  color: aqua;
 }
