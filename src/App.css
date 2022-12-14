@@ -1,6 +1,6 @@
 .App {
-  min-width: calc(97vh - 100px);
-  min-height: calc(97vh - 90px);
+  min-width: 100vh;
+  min-height: 100vh;
   text-align: center;
   margin: auto;
 }
