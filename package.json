@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://elenyatsenko.github.io/Finally_ReactFull_Todo",
+  "homepage": "https://elenyatsenko.github.io/React_ToDo",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
